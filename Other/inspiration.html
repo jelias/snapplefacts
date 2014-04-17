@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Every Bio Ever</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<link rel="icon" type="image/png" href="favicon.png">
+	<link rel="stylesheet" href="style.css">
+	<script src="//use.typekit.net/inw0pjv.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script>
+		$(function() {
+			var pickBio = function() {
+				$('blockquote').text(bios[Math.floor(Math.random() * bios.length)]);
+			}
+
+			var centerContainer = function() {
+				if ($(window).width() >= 768) {
+					$('#container').css('margin-top', ($(window).height() - $('#container').height()) / 2);
+				} else {
+					$('#container').css('margin-top', '60px');
+				}
+			};
+
+			pickBio();
+
+			centerContainer();
+
+			$(window).resize(function() {
+				centerContainer();
+			});
+
+			$('#reload').click(function() {
+				pickBio();
+			});
+
+		});
+
+		var bios = Array(
+			'Professional pixel-pusher.',
+			'Pixel Wrangler',
+			'♥',
+			'Pixels are People Too',
+			'Unicorn Hunter.',
+			'httpster',
+			'Designer, developer, follower of Christ.',
+			'Pixel afficionado',
+			'Creator.',
+			'Designer by day, designer by night.',
+			'Lover of all things design',
+			'Entrepeneurd.',
+			'Pixel-perfect obessive.',
+			'Typography enthusiast.',
+			'True Belieber foreverღ. Justin noticed me! BELIEVE!!',
+			'Nerd.',
+			'Your mom\'s favorite designer, developer & speaker. She already has my contact info...',
+			'Husband, father, designer and writer. Craft beer enthusiast.',
+			'#teamfollowback!!!!!!!!!',
+			'Mrs. Justin Bieber <3 <3 <3',
+			'Manic Pixel Design Girl. Probably a time-exchange student imported from the near future.',
+			'Opinionated.',
+			'Designer. Designer? Designer!',
+			'Author and inspirational speaker.',
+			'#!I@( !@r!3 *&#',
+			'127.0.0.1 is where the heart is.',
+			'PBA. Skinny jeans. Starbucks. Cycling.',
+			'Unicorn herder.',
+			'I like triangles.',
+			'Pixel Assassin.',
+			'TBD',
+			'I make stuff.',
+			'lover of photography, organic coffee, & marginal music. bicycle builder. soul wanderer.',
+			'NEVER SAY NEVER',
+			'coffee addict',
+			'Distracted by neon colors.',
+			'self proclaimed know it all',
+			'Shh, just let it happen.',
+			'music is the answer',
+			'...',
+			'digital nomad',
+			'avid indoorsman',
+			'lol wuts this?',
+			'SEO nut. #wordpress #marketing #seo #keywords #networking #google #conversionrate',
+			'Easily distract...',
+			'mnmlst',
+			'GIF sommelier',
+			'Programmer of Things',
+			'Geek.',
+			'I\'m awesome, what else is there to say?',
+			'Works on the internet. Lives in real life.',
+			'PHP ninja.',
+			'Retweets are not endorsements.',
+			'WordPress Expert.',
+			'In Beta.',
+			'All around good guy.',
+			'Maker of web things.',
+			'Lover of the web.',
+			'I am the real Ogopogo! Join me for a swim anytime... no reason...',
+			'Proudly made by my parents.',
+			'That 3% of IE7 traffic you have, yeah, that\'s you, testing your site in IE7 you muppet.',
+			'[\'hip\', \'hip\']',
+			'geek',
+			'Professional food photographer... find me on instagram'
+		);
+	</script>
+</head>
+<body>
+	<div id="container">
+		<h1>Every Bio Ever</h1>
+		<blockquote></blockquote>
+		<a href="#" id="reload">Reload</a>
+	</div>
+	<div id="creds">A thing by <a href="http://galengidman.com/">Galen Gidman</a> and <a href="http://github.com/galengidman/everybioever/contributors">friends</a>. <a href="http://github.com/galengidman/everybioever">Contribute</a>.</div>
+	<a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+	<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Feverybioever.com%2F&amp;send=false&amp;layout=button_count&amp;width=120&amp;show_faces=false&amp;font&amp;colorscheme=light&amp;action=like&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:120px; height:21px;" allowTransparency="true"></iframe>
+	<div class="g-plusone" data-size="medium"></div>
+	<script>(function(){var a=document.createElement("script");a.type="text/javascript";a.async=true;a.src="https://apis.google.com/js/plusone.js";var b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b)})();</script>
+	<script>
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-39934767-1']);
+		_gaq.push(['_trackPageview']);
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+</body>
+</html>
+
+<!-- site5 -->

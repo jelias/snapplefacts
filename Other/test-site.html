@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<title>Snapple Facts</title>
+<script>
+    $(function() {
+        var pickBio = function() {
+            $('blockquote').text(bios[Math.floor(Math.random() * bios.length)]);
+        }
+
+        var centerContainer = function() {
+            if ($(window).width() >= 768) {
+                $('#container').css('margin-top', ($(window).height() - $('#container').height()) / 2);
+            } else {
+                $('#container').css('margin-top', '60px');
+            }
+        };
+
+        pickBio();
+
+        centerContainer();
+
+        $(window).resize(function() {
+            centerContainer();
+        });
+
+        $('#reload').click(function() {
+            pickBio();
+        });
+
+    });
+
+		var bios = Array(
+			'#1 A goldfish\'s attention span is three seconds.',
+			'#2 Animals that lay eggs don\'t have belly buttons.',
+			'#3 Beavers can hold their breath for 45 minutes under water.',
+			'#4 Slugs have four noses.',
+			'#5 Camels have three eyelids.'
+		);
+	</script>
+<body>
+    <div id="container">
+        
+<h1>Snapple Facts</h1>
+
+        <blockquote></blockquote>	<a href="#" id="reload">Reload</a>
+
+    </div>
+    <div id="creds">A weekend project by <a href="http://jelias.github.io/">Jacob Elias</a> with help from <a href="http://galengidman.com/">Galen Gidman</a>.</div>	<a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+
+    <script>
+        ! function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (!d.getElementById(id)) {
+                js = d.createElement(s);
+                js.id = id;
+                js.src = "//platform.twitter.com/widgets.js";
+                fjs.parentNode.insertBefore(js, fjs);
+            }
+        }(document, "script", "twitter-wjs");
+    </script>
+    <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Feverybioever.com%2F&amp;send=false&amp;layout=button_count&amp;width=120&amp;show_faces=false&amp;font&amp;colorscheme=light&amp;action=like&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:120px; height:21px;" allowTransparency="true"></iframe>
+    <div class="g-plusone" data-size="medium"></div>
+    <script>
+        (function() {
+            var a = document.createElement("script");
+            a.type = "text/javascript";
+            a.async = true;
+            a.src = "https://apis.google.com/js/plusone.js";
+            var b = document.getElementsByTagName("script")[0];
+            b.parentNode.insertBefore(a, b)
+        })();
+    </script>
+    <script>
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-39934767-1']);
+        _gaq.push(['_trackPageview']);
+        (function() {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
